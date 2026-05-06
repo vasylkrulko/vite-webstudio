@@ -1,0 +1,12 @@
+/* Для кожного проекту замінити свої значення */
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fafafa;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1128px;
+  width: 100%;
+}

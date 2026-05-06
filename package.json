@@ -1,0 +1,20 @@
+{
+  "name": "test",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --base=/vite-template/",
+    "postbuild": "prettier --write \"dist/**/*.{html,css,js}\"",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.0",
+    "vite": "^8.0.10"
+  },
+  "dependencies": {
+    "vite-plugin-full-reload": "^1.2.0",
+    "vite-plugin-html-inject": "^1.1.2"
+  }
+}
