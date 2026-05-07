@@ -1,12 +1,16 @@
-/* Для кожного проекту замінити свої значення */
-
 body {
-  font-family: "Roboto", sans-serif;
-  background-color: #fafafa;
+  font-family: 'Roboto', sans-serif;
+  color: #2e2f42;
+  background-color: #ffffff;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 .container {
+  max-width: 320px;
+  padding: 0 16px;
   margin: 0 auto;
-  max-width: 1128px;
-  width: 100%;
 }

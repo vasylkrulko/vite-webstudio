@@ -1,14 +1,30 @@
-<!-- partials/header.html -->
-<header class="header">
-  <div class="container">
-    <a href="#" class="logo">LOGO</a>
-
-    <nav>
-      <ul class="menu">
-        <li><a href="#">Головн</a></li>
-        <li><a href="#">Послуги</a></li>
-        <li><a href="#">Контакти</a></li>
+<header class="page__header">
+  <div class="header__container container">
+    <nav class="header__nav">
+      <a class="logo header__logo" href="index.html"
+        >WEB <span class="logo__black">STUDIO</span></a
+      >
+      <ul class="header__list">
+        <li><a class="header__link active" href="">Studio</a></li>
+        <li><a class="header__link" href="">Portfolio</a></li>
+        <li><a class="header__link" href="">Contacts</a></li>
       </ul>
     </nav>
+
+    <address class="header__contacts">
+      <a class="header__contacts-link" href="mailto:developer@luxsite.eu"
+        >developer@luxsite.eu</a
+      >
+      <a class="header__contacts-link" href="tel:+4207766598778"
+        >+4207766598778</a
+      >
+    </address>
+
+    <!-- BURGER BUTTON -->
+    <button class="burger_menu" type="button">
+      <svg class="" width="24" height="24">
+        <use href="./assets/icons/icons.svg#icon-burger_menu"></use>
+      </svg>
+    </button>
   </div>
 </header>

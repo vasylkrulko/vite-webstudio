@@ -3,4 +3,10 @@
 @import url('./fonts.css');
 @import url('./global.css');
 @import url('./common.css');
-@import url('./styles.css');
+@import url('./components/header.css');
+@import url('./components/hero.css');
+@import url('./components/features.css');
+@import url('./components/team.css');
+@import url('./components/portfolio.css');
+@import url('./modal.css');
+@import url('./media.css');

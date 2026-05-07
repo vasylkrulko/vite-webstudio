@@ -12,17 +12,12 @@ p,
 ol,
 ul {
   margin: 0;
-  margin-bottom: 0;
 }
 
 ul,
 ol {
   list-style: none;
   padding: 0;
-  margin-block: 0;
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 h1,
@@ -35,7 +30,6 @@ h5 {
 }
 
 button {
-  cursor: pointer;
   border: none;
   background: none;
   font: inherit;
@@ -43,14 +37,10 @@ button {
 
 img {
   display: block;
-  max-inline-size: 100%;
+  max-width: 100%;
 }
 
 a {
   text-decoration: none;
   color: inherit;
-}
-
-address {
-  font-style: normal;
 }

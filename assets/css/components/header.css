@@ -1,0 +1,42 @@
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #4d5ae5;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px; /* 116.667% */
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+}
+
+.header__logo {
+  display: block;
+  padding: 18px 0;
+}
+.logo__black {
+  color: #2e2f42;
+}
+
+.header__list,
+.header__contacts {
+  display: none;
+}
+
+.header__link {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
+}
+
+.header__link:hover,
+.header__link:active {
+  color: #404bbf;
+}
+.header__link.active {
+  color: #404bbf;
+}
