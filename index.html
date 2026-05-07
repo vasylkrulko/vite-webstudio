@@ -4,30 +4,354 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Test Vite Include</title>
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Web Studio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" crossorigin href="/vite-webstudio/css/main.css">
   </head>
   <body>
-    <!-- partials/header.html -->
-<header class="header">
-  <div class="container">
-    <a href="#" class="logo">LOGO</a>
-
-    <nav>
-      <ul class="menu">
-        <li><a href="#">Головн</a></li>
-        <li><a href="#">Послуги</a></li>
-        <li><a href="#">Контакти</a></li>
+    <header class="page__header">
+  <div class="header__container container">
+    <nav class="header__nav">
+      <a class="logo header__logo" href="index.html"
+        >WEB <span class="logo__black">STUDIO</span></a
+      >
+      <ul class="header__list">
+        <li><a class="header__link active" href="">Studio</a></li>
+        <li><a class="header__link" href="">Portfolio</a></li>
+        <li><a class="header__link" href="">Contacts</a></li>
       </ul>
     </nav>
+
+    <address class="header__contacts">
+      <a class="header__contacts-link" href="mailto:developer@luxsite.eu"
+        >developer@luxsite.eu</a
+      >
+      <a class="header__contacts-link" href="tel:+4207766598778"
+        >+4207766598778</a
+      >
+    </address>
+
+    <!-- BURGER BUTTON -->
+    <button class="burger_menu" type="button">
+      <svg class="" width="24" height="24">
+        <use href="/vite-webstudio/img/icons.svg#icon-burger_menu"></use>
+      </svg>
+    </button>
   </div>
 </header>
 
 
     <main class="container">
-      <h1>Головна сторінка</h1>
-      <p>Тест підключення partials через Vite.</p>
+      <!-- HERO -->
+<section class="hero">
+  <div>
+    <h1 class="hero__title">Effective Solutions for Your Business</h1>
+    <button type="submit" class="btn__service">Order Service</button>
+  </div>
+</section>
+
+      <!-- FEATURES -->
+<section class="section features">
+  <div class="container">
+    <ul class="features__list">
+      <li class="features__item">
+        <div class="features__item-icon">
+          <svg class="icon-antenna" width="64" height="64">
+            <use href="/vite-webstudio/img/icons.svg#icon-antenna"></use>
+          </svg>
+        </div>
+        <h3 class="features__item-title">Strategy</h3>
+        <p class="features__item-text">
+          Our goal is to identify the business problem to walk away with the
+          perfect and creative solution.
+        </p>
+      </li>
+      <li class="features__item">
+        <div class="features__item-icon">
+          <svg class="icon-antenna" width="64" height="64">
+            <use href="/vite-webstudio/img/icons.svg#icon-clock"></use>
+          </svg>
+        </div>
+        <h3 class="features__item-title">Punctuality</h3>
+        <p class="features__item-text">
+          Bring the key message to the brand's audience for the best price
+          within the shortest possible time.
+        </p>
+      </li>
+      <li class="features__item">
+        <div class="features__item-icon">
+          <svg class="icon-antenna" width="64" height="64">
+            <use href="/vite-webstudio/img/icons.svg#icon-diagram"></use>
+          </svg>
+        </div>
+        <h3 class="features__item-title">Diligence</h3>
+        <p class="features__item-text">
+          Research and confirm brands with the strongest digital growth
+          opportunities and minimize risk.
+        </p>
+      </li>
+      <li class="features__item">
+        <div class="features__item-icon">
+          <svg class="icon-antenna" width="64" height="64">
+            <use href="/vite-webstudio/img/icons.svg#icon-astronaut"></use>
+          </svg>
+        </div>
+        <h3 class="features__item-title">Technologies</h3>
+        <p class="features__item-text">
+          Design practice focused on digital experiences. We bring forth a deep
+          passion for problem-solving.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="team section">
+  <div class="container">
+    <h2>Our Team</h2>
+    <ul class="team__list">
+      <li class="team__item">
+        <img
+          src="/vite-webstudio/img/mark.jpg"
+          alt="Mark Guerrero"
+          width="264"
+          srcset="/vite-webstudio/img/mark.jpg 1x, /vite-webstudio/img/mark@2x.jpg 2x"
+        />
+        <div class="team__content">
+          <h3 class="team__title">Mark Guerrero</h3>
+          <p class="team__text">Product Designer</p>
+          <ul class="team__social-list">
+            <li class="social__item">
+              <a class="social__link">
+                <svg class="social-icon" width="16" height="16">
+                  <use href="/vite-webstudio/img/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link">
+                <svg class="social-icon" width="16" height="16">
+                  <use href="/vite-webstudio/img/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link">
+                <svg class="social-icon" width="16" height="16">
+                  <use href="/vite-webstudio/img/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link">
+                <svg class="social-icon" width="16" height="16">
+                  <use href="/vite-webstudio/img/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="team__item">
+        <img
+          src="/vite-webstudio/img/mark.jpg"
+          alt="Mark Guerrero"
+          width="264"
+          srcset="/vite-webstudio/img/mark.jpg 1x, /vite-webstudio/img/mark@2x.jpg 2x"
+        />
+        <div class="team__content">
+          <h3 class="team__title">Mark Guerrero</h3>
+          <p class="team__text">Product Designer</p>
+          <ul class="team__social-list">
+            <li class="social__item">
+              <a class="social__link">
+                <svg class="social-icon" width="16" height="16">
+                  <use href="/vite-webstudio/img/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link">
+                <svg class="social-icon" width="16" height="16">
+                  <use href="/vite-webstudio/img/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link">
+                <svg class="social-icon" width="16" height="16">
+                  <use href="/vite-webstudio/img/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link">
+                <svg class="social-icon" width="16" height="16">
+                  <use href="/vite-webstudio/img/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="team__item">
+        <img
+          src="/vite-webstudio/img/mark.jpg"
+          alt="Mark Guerrero"
+          width="264"
+          srcset="/vite-webstudio/img/mark.jpg 1x, /vite-webstudio/img/mark@2x.jpg 2x"
+        />
+        <div class="team__content">
+          <h3 class="team__title">Mark Guerrero</h3>
+          <p class="team__text">Product Designer</p>
+          <ul class="team__social-list">
+            <li class="social__item">
+              <a class="social__link">
+                <svg class="social-icon" width="16" height="16">
+                  <use href="/vite-webstudio/img/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link">
+                <svg class="social-icon" width="16" height="16">
+                  <use href="/vite-webstudio/img/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link">
+                <svg class="social-icon" width="16" height="16">
+                  <use href="/vite-webstudio/img/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link">
+                <svg class="social-icon" width="16" height="16">
+                  <use href="/vite-webstudio/img/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="team__item">
+        <img
+          src="/vite-webstudio/img/mark.jpg"
+          alt="Mark Guerrero"
+          width="264"
+          srcset="/vite-webstudio/img/mark.jpg 1x, /vite-webstudio/img/mark@2x.jpg 2x"
+        />
+        <div class="team__content">
+          <h3 class="team__title">Mark Guerrero</h3>
+          <p class="team__text">Product Designer</p>
+          <ul class="team__social-list">
+            <li class="social__item">
+              <a class="social__link">
+                <svg class="social-icon" width="16" height="16">
+                  <use href="/vite-webstudio/img/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link">
+                <svg class="social-icon" width="16" height="16">
+                  <use href="/vite-webstudio/img/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link">
+                <svg class="social-icon" width="16" height="16">
+                  <use href="/vite-webstudio/img/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link">
+                <svg class="social-icon" width="16" height="16">
+                  <use href="/vite-webstudio/img/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="section">
+  <div class="container">
+    <h2 class="portfolio__title">Our Portfolio</h2>
+    <ul class="portfolio__list">
+      <li class="portfolio__item">
+        <img
+          class="portfolio__img"
+          src="/vite-webstudio/img/banking-app.jpg"
+          alt="Banking App"
+          width="360"
+          srcset="/vite-webstudio/img/banking-app.jpg 1x, /vite-webstudio/img/banking-app@2x.jpg 2x"
+        />
+        <div class="portfolio__content">
+          <h3 class="portfolio__content-title">Banking App</h3>
+          <p class="portfolio__content-subtitle">App</p>
+        </div>
+      </li>
+
+      <li class="portfolio__item">
+        <img
+          class="portfolio__img"
+          src="/vite-webstudio/img/banking-app.jpg"
+          alt="Banking App"
+          width="360"
+          srcset="/vite-webstudio/img/banking-app.jpg 1x, /vite-webstudio/img/banking-app@2x.jpg 2x"
+        />
+        <div class="portfolio__content">
+          <h3 class="portfolio__content-title">Banking App</h3>
+          <p class="portfolio__content-subtitle">App</p>
+        </div>
+      </li>
+
+      <li class="portfolio__item">
+        <img
+          class="portfolio__img"
+          src="/vite-webstudio/img/banking-app.jpg"
+          alt="Banking App"
+          width="360"
+          srcset="/vite-webstudio/img/banking-app.jpg 1x, /vite-webstudio/img/banking-app@2x.jpg 2x"
+        />
+        <div class="portfolio__content">
+          <h3 class="portfolio__content-title">Banking App</h3>
+          <p class="portfolio__content-subtitle">App</p>
+        </div>
+      </li>
+
+      <li class="portfolio__item">
+        <img
+          class="portfolio__img"
+          src="/vite-webstudio/img/banking-app.jpg"
+          alt="Banking App"
+          width="360"
+          srcset="/vite-webstudio/img/banking-app.jpg 1x, /vite-webstudio/img/banking-app@2x.jpg 2x"
+        />
+        <div class="portfolio__content">
+          <h3 class="portfolio__content-title">Banking App</h3>
+          <p class="portfolio__content-subtitle">App</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
     </main>
 
     <!-- partials/footer.html -->
