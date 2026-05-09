@@ -15,7 +15,7 @@
 
 .header__logo {
   display: block;
-  padding: 18px 0;
+  padding: 24px 0;
 }
 .logo__black {
   color: #2e2f42;
@@ -27,6 +27,7 @@
 }
 
 .header__link {
+  padding: 24px 0;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px; /* 150% */

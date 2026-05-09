@@ -1,0 +1,114 @@
+.footer {
+  background-color: #2e2f42;
+  color: #ffffff;
+}
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+.footer__info {
+  max-width: 264px;
+}
+.footer__logo {
+  display: block;
+  text-align: center;
+  margin-bottom: 16px;
+  color: #4d5ae5;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.footer__logo-color {
+  color: #ffffff;
+}
+.footer__text {
+  max-width: 264px;
+  text-align: left;
+  color: #f4f4fd;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
+.footer__social-title {
+  text-align: center;
+  margin-bottom: 16px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
+
+.footer__social-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.link__social {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.link__social:hover {
+  background-color: #31d0aa;
+}
+
+.footer__social-icon {
+  fill: #fff;
+}
+.footer__subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.footer__form {
+  display: flex;
+  max-width: 288px;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.footer__input {
+  width: 100%;
+
+  padding: 16px 16px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  background: transparent;
+  color: #fff;
+  font-size: 12px;
+}
+
+.footer__btn {
+  display: inline-flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  gap: 8px;
+
+  width: fit-content; /* кнопка не на всю ширину */
+  padding: 8px 24px;
+
+  background-color: #4d5ae5;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn__icon {
+  fill: #fff;
+}
