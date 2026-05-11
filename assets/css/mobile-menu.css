@@ -1,0 +1,128 @@
+/* MOBILE MENU */
+.mobile__menu {
+  background-color: white; /* Фон */
+  position: fixed; /* Фіксує елемент відносно вікна браузера */
+  top: 0; /* Привязує елемент до верхнього краю */
+  left: 0; /* Привязує елемент до лівого краю */
+  width: 100%; /* Розтягує елемент на всю ширину екрану */
+  height: 100%; /* Розтягує елемент на всю висоту екрану */
+  opacity: 0; /* Робить елемент повністю прозорим (невидимим) */
+  pointer-events: none; /* Вимикає взаємодію з елементом (кліки проходять крізь нього) */
+
+  display: flex; /* Це батько, тому потрібно вирівняти дітей */
+  justify-content: center;
+  align-items: center;
+  transition:
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile__menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.mobile__menu-container {
+  position: relative;
+  height: 100%;
+  padding: 72px 16px 40px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile__nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.mobile__nav-link {
+  font-size: 36px;
+  font-weight: 700;
+  color: #2e2f42;
+}
+
+.mobile__nav-link.current {
+  color: #404bbf;
+}
+
+.mobile__bottom {
+  margin-top: auto;
+}
+
+.mobile__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.mobile__contacts-link {
+  font-size: 20px;
+  font-weight: 500;
+  color: #4d5ae5;
+}
+
+.mobile__contacts-link.email {
+  color: #434455;
+}
+
+.mobile__socials {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.mobile__social-link {
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile__social-icon {
+  fill: #f4f4fd;
+}
+
+.mobile__menu-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+
+  width: 24px;
+  height: 24px;
+
+  border-radius: 50%;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  transition: background-color 250ms;
+}
+
+.close-icon {
+  width: 8px;
+  height: 8px;
+  fill: #2e2f42;
+  transition: fill 250ms;
+}
+
+.mobile__menu-close:hover,
+.mobile__menu-close:focus {
+  background-color: #404bbf;
+}
+
+.mobile__menu-close:hover .close-icon,
+.mobile__menu-close:focus .close-icon {
+  fill: #ffffff;
+}
