@@ -266,3 +266,27 @@
     width: auto;
   }
 }
+
+@media (min-resolution: 192dpi) {
+  .hero {
+    background-image:
+      linear-gradient(rgba(46, 46, 66, 0.7), rgba(46, 46, 66, 0.7)),
+      url('../img/hero-mobile@2x.jpg');
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 46, 66, 0.7)),
+      url('../img/hero-tablet@2x.jpg');
+  }
+}
+
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url('../img/hero-desktop@2x.jpg');
+  }
+}
