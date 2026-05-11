@@ -10,5 +10,6 @@
 @import url('./components/portfolio.css');
 @import url('./components/footer.css');
 
-@import url('./modal.css');
 @import url('./media.css');
+@import url('./mobile-menu.css');
+@import url('./order-service-modal.css');

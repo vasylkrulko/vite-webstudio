@@ -41,3 +41,7 @@
 .header__link.active {
   color: #404bbf;
 }
+
+.burger_menu {
+  cursor: pointer;
+}

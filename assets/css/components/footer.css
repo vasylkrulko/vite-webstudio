@@ -2,6 +2,13 @@
   background-color: #2e2f42;
   color: #ffffff;
 }
+.footer__subscribe-title {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
 .footer__container {
   display: flex;
   flex-direction: column;
@@ -71,12 +78,10 @@
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  width: 100%;
 }
 
 .footer__form {
   display: flex;
-  max-width: 288px;
   flex-direction: column;
   gap: 16px;
   width: 100%;
@@ -84,7 +89,6 @@
 
 .footer__input {
   width: 100%;
-
   padding: 16px 16px;
   border: 1px solid #fff;
   border-radius: 4px;
@@ -100,7 +104,7 @@
   justify-content: center;
   gap: 8px;
 
-  width: fit-content; /* кнопка не на всю ширину */
+  width: fit-content;
   padding: 8px 24px;
 
   background-color: #4d5ae5;
