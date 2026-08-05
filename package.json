@@ -4,8 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build --base=/vite-webstudio/",
+    "build": "vite build",
+    "build:relative": "vite build --mode relative",
+    "build:github": "vite build --mode github",
     "postbuild": "prettier --write \"dist/**/*.{html,css,js}\"",
     "preview": "vite preview"
   },
