@@ -1,8 +1,4 @@
 /* FEATURES */
-.section {
-  padding: 96px 0;
-}
-
 .features__list {
   display: flex;
   flex-direction: column;
